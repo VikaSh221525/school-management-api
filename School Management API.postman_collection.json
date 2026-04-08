@@ -1,0 +1,76 @@
+{
+  "info": {
+    "_postman_id": "490a79a6-355d-46cf-80ba-bb3c53ebe334",
+    "name": "School Management API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "46446349",
+    "_collection_link": "https://go.postman.co/collection/46446349-490a79a6-355d-46cf-80ba-bb3c53ebe334?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "addSchool",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Delhi Public School\",\r\n  \"address\": \"Sector 45, Gurugram\",\r\n  \"latitude\": 28.4089,\r\n  \"longitude\": 77.0727\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://school-management-api-vmdd.onrender.com/addSchool",
+          "protocol": "https",
+          "host": [
+            "school-management-api-vmdd",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "addSchool"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "listSchools",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://school-management-api-vmdd.onrender.com/listSchools?latitude=28.6315&longitude=77.2167",
+          "protocol": "https",
+          "host": [
+            "school-management-api-vmdd",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "listSchools"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "28.6315"
+            },
+            {
+              "key": "longitude",
+              "value": "77.2167"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
